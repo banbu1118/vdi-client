@@ -24,7 +24,7 @@ VDI Client 是一个现代化的桌面应用程序，专为企业和个人用户
 
 - **开发框架**: Qt 6.10.2
 - **编程语言**: C++17
-- **构建工具**: CMake 4.2.3
+- **构建工具**: CMake 3.30.5
 - **RDP 引擎**: FreeRDP
 - **打包工具**: Inno Setup 6
 
@@ -64,7 +64,7 @@ VDI Client 是一个现代化的桌面应用程序，专为企业和个人用户
 ### 开发环境
 
 - **Qt 6.10.2** (MinGW 64-bit)
-- **CMake 4.2.3 或更高版本**
+- **CMake 3.30.5 或更高版本**
 - **MinGW-w64** (随 Qt 安装)
 - **Inno Setup 6** (用于打包)
 
@@ -120,7 +120,7 @@ vdi-qt-bak-test/
 
 **安装步骤**：
 - 运行 Qt 在线安装程序
-- 默认安装
+- 默认安装，安装时会自动安装cmake和mingw
 
 **网络问题解决方案**：
 如果网络错误导致安装失败，可以使用国内镜像源：
@@ -129,16 +129,7 @@ vdi-qt-bak-test/
 qt-online-installer-windows-x64-4.10.0.exe --mirror https://mirrors.ustc.edu.cn/qtproject
 ```
 
-#### 2. 安装 CMake
-
-下载地址：https://cmake.org/download
-
-**安装步骤**：
-- 下载 Windows x64 安装包
-- 运行安装程序
-- 选择"Add CMake to the system PATH"选项
-
-#### 3. 安装 Inno Setup
+#### 2. 安装 Inno Setup
 
 下载地址：https://jrsoftware.org/isdl.php
 
@@ -147,7 +138,7 @@ qt-online-installer-windows-x64-4.10.0.exe --mirror https://mirrors.ustc.edu.cn/
 - 运行安装程序
 - 完成默认安装
 
-#### 4. 配置环境变量
+#### 43. 配置环境变量
 
 Qt 安装时会自动安装 MinGW，需要配置以下环境变量：
 
@@ -155,6 +146,7 @@ Qt 安装时会自动安装 MinGW，需要配置以下环境变量：
 ```
 C:\Qt\Tools\mingw1310_64\bin
 C:\Qt\6.10.2\mingw_64\bin
+C:\Qt\Tools\CMake_64\bin
 ```
 
 **验证安装**：
