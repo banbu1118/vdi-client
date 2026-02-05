@@ -104,7 +104,7 @@ vdi-qt-bak-test/
 
 ### Basic Usage
 
-1. Enter the virtual machine address or server address
+1. Enter server address
 2. Enter username and password
 3. Click the "Connect" button
 4. Wait for the connection to be established
