@@ -18,13 +18,13 @@ A Qt6-based Virtual Desktop Infrastructure (VDI) client application that connect
 
 ## Project Overview
 
-VDI Client is a modern desktop application designed for both enterprise and individual users, providing convenient virtual desktop access experience. Built on the Qt6 framework, it uses FreeRDP as the RDP connection engine and supports multiple languages with rich feature sets.
+VDI Client is a modern desktop application designed for both enterprise and individual users, providing convenient virtual desktop access experience. Built on Qt6 framework, it uses FreeRDP as the RDP connection engine and supports multiple languages with rich feature sets.
 
 ### Technology Stack
 
 - **Development Framework**: Qt 6.10.2
 - **Programming Language**: C++17
-- **Build Tool**: CMake 4.2.3
+- **Build Tool**: CMake 3.30.5
 - **RDP Engine**: FreeRDP
 - **Packaging Tool**: Inno Setup 6
 
@@ -64,7 +64,7 @@ VDI Client is a modern desktop application designed for both enterprise and indi
 ### Development Environment
 
 - **Qt 6.10.2** (MinGW 64-bit)
-- **CMake 4.2.3 or higher**
+- **CMake 3.30.5 or higher**
 - **MinGW-w64** (installed with Qt)
 - **Inno Setup 6** (for packaging)
 
@@ -95,7 +95,7 @@ vdi-qt-bak-test/
 
 ## Quick Start
 
-### Installing the Application
+### Installing Application
 
 1. Download the latest installer `VDIClient-Setup.exe`
 2. Double-click to run the installer
@@ -120,7 +120,7 @@ Download URL: https://www.qt.io/download-qt-installer
 
 **Installation Steps**:
 - Run the Qt online installer
-- Default installation
+- Default installation (CMake and MinGW will be automatically installed during installation)
 
 **Network Issue Solution**:
 If installation fails due to network errors, you can use a domestic mirror:
@@ -129,16 +129,7 @@ If installation fails due to network errors, you can use a domestic mirror:
 qt-online-installer-windows-x64-4.10.0.exe --mirror https://mirrors.ustc.edu.cn/qtproject
 ```
 
-#### 2. Install CMake
-
-Download URL: https://cmake.org/download
-
-**Installation Steps**:
-- Download Windows x64 installer
-- Run the installer
-- Select "Add CMake to the system PATH" option
-
-#### 3. Install Inno Setup
+#### 2. Install Inno Setup
 
 Download URL: https://jrsoftware.org/isdl.php
 
@@ -155,6 +146,7 @@ Qt installation automatically installs MinGW. You need to configure the followin
 ```
 C:\Qt\Tools\mingw1310_64\bin
 C:\Qt\6.10.2\mingw_64\bin
+C:\Qt\Tools\CMake_64\bin
 ```
 
 **Verify Installation**:
@@ -214,7 +206,7 @@ A: Check the following items:
 
 This project is licensed under the GNU Affero General Public License Version 3.0 (AGPL-3.0).
 
-See [LICENSE](LICENSE) file for details.
+See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
