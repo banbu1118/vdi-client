@@ -2,8 +2,8 @@
 
 🌍 Language / 语言选择：
 
-- 🇨🇳 [中文](README_ZH.md)
-- 🇺🇸 [English](README_EN.md)
+-  [中文](README_ZH.md)
+-  [English](README_EN.md)
 
 ---
 
