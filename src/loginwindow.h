@@ -58,6 +58,8 @@ private slots:
     void onHealthCheckReply(QNetworkReply *reply, const QString &server, const QString &username, const QString &password);
     void onBackClicked();
     void onRefreshClicked();
+    void onChangePasswordClicked();
+    void onChangePasswordReply(QNetworkReply *reply);
     void onVmListReply(QNetworkReply *reply);
     void onVmStartClicked(const QString &vmId);
     void onVmStopClicked(const QString &vmId);
@@ -118,6 +120,7 @@ private:
     QWidget *m_vmListContainer;
     QPushButton *m_backButton;
     QPushButton *m_refreshButton;
+    QPushButton *m_changePasswordButton;
     QLabel *m_vmTitleLabel;
     QLabel *m_vmStatusLabel;
     QStackedWidget *m_stackedWidget;
